@@ -1,0 +1,27 @@
+/* pages/pages/orderSearch/repair/repair.wxss */
+@import "/pages/pages/appointment/uploadImg/uploadImg.wxss";
+.input-h {
+  min-height: 90rpx;
+}
+
+.input-h:not(:last-child) {
+  border-bottom: 1rpx solid #e1e4e9;
+}
+
+.flex-style {
+  align-items: center;
+}
+.tip{
+  line-height: 104rpx;
+}
+.input-name{
+  font-size: 32rpx;
+  color: #6E7B8C;
+}
+page{
+  display:flex;
+  flex-direction: column;
+}
+.content-wrap{
+  overflow: auto;
+}

@@ -1,0 +1,75 @@
+/* pages/pages/orderSearch/index/index.wxss */
+@import '/pages/pages/logistics/index/index.wxss';
+page{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.desc{
+  color: #AAB2B7;
+  overflow-wrap: break-word;
+  flex: 1;
+}
+.card-header-left{
+  align-items: center;
+}
+.img-icon{
+  width:30rpx;
+  height:36rpx;
+  margin-right:12rpx;
+}
+.card{
+  margin-top:32rpx;
+}
+.card:last-child{
+  margin-bottom: 32rpx;
+}
+.status-tip{
+  line-height: 72rpx;
+}
+.card-content{
+  padding-bottom: 60rpx;
+}
+.class-name{
+  color: #6E7B8C;
+}
+.swiper-tab{
+  width: 100%;
+  text-align: center;
+  height: 104rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background:#fff;
+  align-items: flex-end;
+}
+.swiper-tab-item{
+  width: 30%; 
+  color:#434343;
+  line-height: 98rpx;
+}
+.active{
+  color:#33B495;
+  line-height: 90rpx;
+}
+.active-border{
+  width:64rpx;
+  height:8rpx;
+  border-radius: 4rpx;
+  background-image: linear-gradient(38deg, #41CEAC 7%, #8BE1BE 85%, #99E5C1 100%);
+}
+.swiper-wrap{
+  flex-direction: column;
+  height:100%;
+}
+.swiperCurrent{
+  overflow: auto;
+}
+swiper-item{
+  overflow: auto !important;
+}
+.active-border-box{
+  display:flex;
+  justify-content: center;
+}

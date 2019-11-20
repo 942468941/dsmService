@@ -1,0 +1,24 @@
+/* pages/pages/logistics/detail/detail.wxss */
+.card-box{
+  background:#fff;
+  margin:24rpx 0;
+}
+.card-content{
+  padding:32rpx 24rpx;
+}
+.title{
+  color:#666;
+}
+.detail{
+  color:#999;
+}
+.searchAddress{
+  background:#fff;
+  margin-bottom: 24rpx;
+  height:100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+  color: #8AB7FE;
+}

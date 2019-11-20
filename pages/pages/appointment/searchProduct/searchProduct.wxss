@@ -1,0 +1,11 @@
+/* pages/pages/appointment/searchProduct/searchProduct.wxss */
+@import '../index/index.wxss';
+.search-input{
+  height:100rpx;
+  background:#fff;
+  margin-top:32rpx;
+  padding:0 24rpx;
+}
+.search-btn{
+  margin-top:64rpx;
+}

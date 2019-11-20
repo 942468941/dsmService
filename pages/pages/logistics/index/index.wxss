@@ -1,0 +1,35 @@
+/* pages/pages/logistics/index/index.wxss */
+.card{
+  min-height:300rpx;
+  margin-top:48rpx;
+  box-shadow: 0 10rpx 20rpx 0 rgba(187,209,241,0.20);
+  border-radius: 8rpx;
+}
+.card-header-left{
+  flex:1;
+}
+.card-header{
+  width:90%;
+  margin:0 auto;
+  border-bottom: 2rpx solid #F2F4F7;
+  height:84rpx;
+  line-height: 84rpx;
+}
+.title{
+  font-size: 28rpx;
+  color: #AAB2B7;
+  width:140rpx;
+  text-align: right;
+}
+.card-content{
+  width:90%;
+  margin:0 auto;
+  display: flex;
+}
+.card-content-list{
+  line-height: 42rpx;
+  padding:10rpx 0;
+}
+.font26{
+  font-size: 26rpx;
+}

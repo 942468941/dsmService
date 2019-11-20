@@ -1,0 +1,25 @@
+/* pages/pages/appointment/scanCode/scanCode.wxss */
+
+.content {
+  text-align: center;
+  padding:32rpx 0;
+  border-radius: 24rpx;
+}
+
+.img-box {
+  width: 424rpx;
+  height: 300rpx;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 48rpx;
+  color: #4a4a4a;
+  letter-spacing: 0.91rpx;
+}
+.box{
+  margin-top:44rpx;
+}
+.desc{
+  margin-top:24rpx;
+}

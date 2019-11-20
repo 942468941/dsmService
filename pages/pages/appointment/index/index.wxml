@@ -1,0 +1,69 @@
+<!--pages/pages/appointment/index/index.wxml-->
+<view class="flex1 content-box">
+  <view class="common-width marginTop48">
+    <view class="tip-title">请选择你需要安装的产品</view>
+    <view class="font26 order-status-will tip-desc">以下产品根据您的手机号查询得到</view>
+  </view>
+  <navigator url="/pages/pages/appointment/uploadList/uploadList" hover-class="navigator-hover" class="content common-width card">
+    <view class="card-header flex-style">
+      <view class="card-header-left font32">T86陨石黑</view>
+      <view class="order-status-error font28 margin-right">未通过</view>
+      <view class="order-status-warn font28">客服查看中</view>
+      <!-- <view class="order-status-will font28">未安装</view> -->
+    </view>
+    <view class="card-content">
+      <view class="flex1 paddingStyle">
+        <view class="flex-style card-content-list">
+          <view class="title">联系人：</view>
+          <view class="font28">张三</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">手机号码：</view>
+          <view class="font28">京东</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">平台编号：</view>
+          <view class="font28">6755112178273786718898</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">购买时间：</view>
+          <view class="font28">2019-11-13</view>
+        </view>
+      </view>
+      <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+    </view>
+  </navigator>
+  <navigator url="/pages/pages/appointment/uploadList/uploadList" hover-class="navigator-hover" class="content common-width card">
+    <view class="card-header flex-style">
+      <view class="card-header-left font32">T86陨石黑</view>
+      <view class="order-status-will font28">未安装</view>
+    </view>
+    <view class="card-content">
+      <view class="flex1 paddingStyle">
+        <view class="flex-style card-content-list">
+          <view class="title">联系人：</view>
+          <view class="font28">张三</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">手机号码：</view>
+          <view class="font28">京东</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">平台编号：</view>
+          <view class="font28">6755112178273786718898</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">购买时间：</view>
+          <view class="font28">2019-11-13</view>
+        </view>
+      </view>
+      <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+    </view>
+  </navigator>
+</view>
+<view class="common-width font28 footer">
+  <view bindtap="searchProduct">
+    输入订单信息查找设备
+  </view>
+  <view bindtap="scanSearchProduct">扫描二维码查找设备</view>
+</view>

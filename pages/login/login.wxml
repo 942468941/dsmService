@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class="content">
+  <view>
+    <input bindinput="bindKeyInput" type="number" maxlength="11" class="phone-input common-width"  placeholder-class="placeholderStyle" placeholder="请输入收货人手机号"/>
+  </view>
+  <view class="code-wrap common-width">
+    <input class="code-input top-height" type="number" placeholder-class="placeholderStyle" placeholder="请输入验证码"/>
+    <!-- <view class="top-height again-btn" wx:if="{{again}}">重新发送40S</view> -->
+    <view class="top-height {{showCodeBtn?'again-btn':'code-btn'}}" disabled='{{disabled}}' bindtap="codeBtn">{{time}}</view>
+  </view>
+</view>
+<view class="common-width btn-box">
+  <button class="btn btn-info" bindtap="codeSubmitBtn">绑定</button>
+</view>

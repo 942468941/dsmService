@@ -1,0 +1,34 @@
+/* pages/pages/appointment/success/success.wxss */
+
+.success-box {
+  width: 130rpx;
+  height: 130rpx;
+  margin: 0 auto;
+  padding-top:75rpx;
+}
+
+.success-tip {
+  font-size: 40rpx;
+  color: #333;
+  line-height: 130rpx;
+}
+
+.step-process {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16rpx;
+}
+
+.van-icon-checked {
+  font-size: 40rpx !important;
+}
+
+.van-step__circle {
+  width: 17rpx !important;
+  height: 17rpx !important;
+  background: #e1e4e9 !important;
+}
+.van-step__title{
+  font-size: 26rpx;
+  color: #AAB2B7;
+}

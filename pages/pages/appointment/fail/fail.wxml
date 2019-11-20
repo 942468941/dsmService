@@ -1,0 +1,13 @@
+<!--pages/pages/appointment/fail/fail.wxml-->
+<view class="marginTop32">
+  <view class="content">
+    <view class="success-box">
+      <image mode="aspectFill" class="img-size" src="/pages/static/images/fail.png"></image>
+    </view>
+    <view class="textCenter success-tip">操作失败</view>
+    <view class="textCenter font28 fail-desc">图片上传失败，请重新上传！</view>
+  </view>
+  <view class="common-width marginTop64">
+    <button class="btn btn-info">重新上传</button>
+  </view>
+</view>

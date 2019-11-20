@@ -1,0 +1,29 @@
+<!--pages/pages/appointment/notice/notice.wxml-->
+<view class="notice-box">
+  <view class="common-width content marginTop32">
+  <view class="wrap">
+  <view class="font32 bold header-title">尊敬的顾客：</view>
+    <view class="font32 bold desc">感谢您购买了我们的产品，由于门锁的特殊性，需要有一个安装过程，以下为预约安装流程，请您阅读。</view>
+    <view class="content-text">
+      <view class="font28 bold">1.测量尺寸信息</view>
+      <view>希望你在确认已收货或购买订单信息无误后，请根据下图测量您家门锁尺寸信息，并拍4张门和锁体的照片。</view>
+      <view class="img-box">
+        <image class="img-tip" mode="aspectFit" src="/pages/static/images/Bitmap.png"></image>
+      </view>
+    </view>
+    <view class="content-text">
+      <view class="font28 bold">2.确认预约信息</view>
+      <view>确认你的预约地址，时间，联系方式等信息。</view>
+    </view>
+    <view class="content-text">
+      <view class="font28 bold">3.等待师傅与你联系</view>
+      <view>师傅将尽快与您取得联系。</view>
+    </view>
+  </view>
+  </view> 
+</view>
+  <view class="footer flex-center">
+    <view class="common-width">
+      <view class="font32 bold btn btn-info-border">我已阅读 下一步 （5s）</view>
+    </view>
+  </view>

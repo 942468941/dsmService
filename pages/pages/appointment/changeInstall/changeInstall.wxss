@@ -1,0 +1,38 @@
+/* pages/pages/appointment/changeInstall/changeInstall.wxss */
+@import '../index/index.wxss';
+
+.title {
+  width: 210rpx;
+}
+
+.order-img-box {
+  background: #fbfbfc;
+  border: 1rpx solid #e1e4e9;
+  border-radius: 8rpx;
+  width: 280rpx;
+  height: 280rpx;
+  margin: 10rpx auto 0;
+}
+
+.img-size {
+  width: 70%;
+  height: 70%;
+}
+.order-box{
+  padding:32rpx 0;
+  border-top:1rpx solid #F2F4F7;
+  border-bottom:1rpx solid #F2F4F7;
+}
+.card-header {
+  border:0;
+}
+.lock-name{
+  line-height: 76rpx;
+  font-size: 36rpx;
+  color: #4A4A4A;
+  margin-top:16rpx;
+}
+.lock-tip{
+  font-size: 24rpx;
+color: #AAB2B7;
+}

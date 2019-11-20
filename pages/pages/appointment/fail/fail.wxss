@@ -1,0 +1,10 @@
+/* pages/pages/appointment/fail/fail.wxss */
+@import '../success/success.wxss';
+.fail-desc{
+  color:#888888;
+  padding:16rpx 0 67rpx;
+}
+.success-tip{
+  line-height: 60rpx;
+  margin-top:48rpx;
+}

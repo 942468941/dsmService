@@ -1,0 +1,6 @@
+/* pages/pages/appointment/searchList/searchList.wxss */
+@import '/pages/pages/appointment/index/index.wxss';
+.tip-title{
+  font-size: 36rpx;
+  
+}

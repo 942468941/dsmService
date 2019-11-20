@@ -1,0 +1,29 @@
+/* pages/pages/appointment/index/index.wxss */
+@import '/pages/pages/logistics/index/index.wxss';
+page{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+.content-box{
+  overflow: auto;
+}
+
+.paddingStyle {
+  padding: 20rpx 0;
+}
+
+.tip-title {
+  font-size: 42rpx;
+  color: #333;
+  font-weight: bold;
+}
+.tip-desc{
+  line-height: 62rpx;
+}
+.footer{
+  text-align: center;
+  color: #AAB2B7;
+  line-height: 60rpx;
+  padding-bottom: 20rpx;
+}

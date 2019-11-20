@@ -1,0 +1,59 @@
+<!--pages/pages/appointment/uploadImg3/uploadImg3.wxml-->
+<view class="paddingTop32">
+  <view class="model-box">
+    <view class="common-width content page-box">
+      <view class="view-img-box">
+        <image class="img-size1" mode="aspectFit" src="/pages/static/images/lock.png"></image>
+        <view>
+          <view class="lock-img-tip">
+            锁舌弹出-正面视图
+          </view>
+          <view class="order-status-willing font28" bindtap="showExample">查看示例</view>
+        </view>
+      </view>
+    </view>
+    <view class="common-width content page-box marginTop32">
+      <view class="upload-content">
+        <view class="Tip-text">上传图片</view>
+        <view class="weui-uploader uploadImg-box marginTop32">
+          <view class="weui-uploader__bd">
+            <view class="weui-uploader__files">
+              <block wx:for="{{imageList}}" wx:for-item="image" wx:key="index">
+                <view class="weui-uploader__file">
+                  <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+                </view>
+              </block>
+            </view>
+            <view class="weui-uploader__input-box flex-center" bindtap="chooseImage" wx-if="{{chooseImageShow}}">
+              <view class="chooseImage">
+                <image class="img-size" mode="aspectFit" src="/pages/static/images/upload.png"></image>
+              </view>
+            </view>
+          </view>
+          <van-icon wx:if="{{deleteImgStatus}}" bindtap="deleteImg" class="deleteIcon" name="clear" size="44rpx" color="rgba(0,0,0,0.5)" custom-class="icon" />
+        </view>
+      </view>
+    </view>
+    <view class="common-width marginTop48">
+      <view class="btn btn-info">完成</view>
+    </view>
+  </view>
+</view>
+<view class="page-section page-section-spacing swiper" wx:if="{{showImg}}">
+  <swiper indicator-dots="{{indicatorDots}}" class="swiper-box" indicator-color="#fff" indicator-active-color="#62D4B9" circular="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{showImgArr}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item">
+          <view class="swiper-item-name textCenter">
+            {{item.name}}
+            <van-icon bindtap="cancelFun" class="cancel" name="cross" color="#fff" custom-class="icon" />
+          </view>
+          <view class="common-width">
+            <image class="show-images" mode="aspectFit" src="{{item.src}}"></image>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+

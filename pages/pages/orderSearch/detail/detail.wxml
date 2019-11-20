@@ -1,0 +1,66 @@
+<!--pages/pages/orderSearch/detail/detail.wxml-->
+<view class="content-box flex1">
+  <view class="content marginTop32">
+    <view class="card-content">
+      <view class="paddingStyle">
+        <view class="flex-style card-content-list">
+          <view class="title">服务单号：</view>
+          <view class="font28 desc">6755112178273786718898</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">预约时间：</view>
+          <view class="font28 desc">2018-10-10</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">预约地址：</view>
+          <view class="font28 desc"> 浙江省杭州市滨江区江晖南路7号德施曼机电 (中国)3楼</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content marginTop32">
+    <view class="card-content">
+      <view class="paddingStyle">
+        <view class="flex-style card-content-list">
+          <view class="title">故障描述：</view>
+          <view class="font28 desc">备注信息文本内容，文本字数长度限制遵循上一版规则，备注信息文本内容，文本字数长度限制遵循上一版规则。</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content marginTop32">
+    <view class="common-width">
+      <view class="record-box">
+        <image class="img-icon" src="/pages/static/images/records.png"></image>
+        <text class="record-title">维修记录</text>
+      </view>
+      <van-steps steps="{{ steps }}" active="{{ active }}" direction="vertical" active-color="#6E7B8C" />
+    </view>
+  </view>
+</view>
+<view class="content footerBtn">
+  <view class="common-width">
+    <!-- <button class="btn btn-plain">取消订单</button> -->
+    <!-- <button class="btn btn-plain">查看物流</button> -->
+    <button class="btn btn-info" bindtap="showBottom">评价</button>
+  </view>
+</view>
+<van-popup show="{{ show.bottom }}" position="bottom" custom-style="height: 42%" bind:close="hideBottom">
+  <view class="flex-style evaluate-header">
+    <view class="deleteIcon-box">
+      <van-icon bindtap="hideModel" class="deleteIcon" name="cross" size="44rpx" custom-class="icon" />
+    </view>
+    <view class="evaluate-header-name">评价</view>
+  </view>
+  <view class="textCenter flex-center star-box">
+    <demo-block title="评价">
+      <van-rate custom-class="van-rate" data-key="value" value="{{ value }}" size="{{ 128 }}" color="#FDAC6C" void-color="#E1E4E9" void-icon="star" bind:change="onChange" />
+    </demo-block>
+  </view>
+  <view class="font26 order-status-will textCenter starTip">轻触星星进行评价</view>
+  <view class="content footerBtn">
+    <view class="common-width">
+      <button class="btn btn-info" bindtap="showBottom">评价</button>
+    </view>
+  </view>
+</van-popup>

@@ -1,0 +1,183 @@
+<!--pages/pages/orderSearch/index/index.wxml-->
+<view>
+<demo-block title="自定义头部导航">
+  <van-nav-bar
+    title="安装与维修"
+    right-text="报修"
+    left-arrow
+    bind:click-left="onClickLeft"
+    bind:click-right="onClickRight"
+  />
+</demo-block>
+</view>
+<view class="swiper-wrap flex-style">
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">
+      <text data-current="0">全部</text>
+      <view class="{{currentTab==0?'active-border-box':''}}">
+        <view class="{{currentTab==0?'active-border':''}}"></view>
+      </view>
+    </view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">
+      <text data-current="1">安装</text>
+      <view class="{{currentTab==1?'active-border-box':''}}">
+        <view class="{{currentTab==1?'active-border':''}}"></view>
+      </view>
+    </view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">
+      <text data-current="2">维修</text>
+      <view class="{{currentTab==2?'active-border-box':''}}">
+        <view class="{{currentTab==2?'active-border':''}}"></view>
+      </view>
+    </view>
+  </view>
+  <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab" class="flex1 swiperCurrent">
+    <swiper-item>
+      <view class="content-box">
+        <navigator url="/pages/pages/appointment/uploadList/uploadList" hover-class="navigator-hover" class="content card">
+          <view class="card-header flex-style">
+            <view class="card-header-left font32 flex-style">
+              <image class="img-icon" src="/pages/static/images/records.png"></image>
+              <text class="class-name">报修工单</text>
+            </view>
+            <view class="order-status-will font26">2018-08-09 12:24</view>
+            <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+          </view>
+          <view class="card-content">
+            <view class="paddingStyle">
+              <view class="font32 status-tip">您已提交报修申请，正在等待审核，请稍后</view>
+              <view class="flex-style card-content-list">
+                <view class="title">报修单号：</view>
+                <view class="font28 desc">6755112178273786718898</view>
+              </view>
+              <view class="flex-style card-content-list">
+                <view class="title">预约时间：</view>
+                <view class="font28 desc">2018-10-10</view>
+              </view>
+              <view class="flex-style card-content-list">
+                <view class="title">预约地址：</view>
+                <view class="font28 desc"> 浙江省杭州市滨江区江晖南路7号德施曼机电 (中国)3楼</view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+        <navigator url="/pages/pages/appointment/uploadList/uploadList" hover-class="navigator-hover" class="content card">
+          <view class="card-header flex-style">
+            <view class="card-header-left font32 flex-style">
+              <image class="img-icon" src="/pages/static/images/records.png"></image>
+              <text class="class-name">安装工单</text>
+            </view>
+            <view class="order-status-will font26">2018-08-09 12:24</view>
+            <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+          </view>
+          <view class="card-content">
+            <view class="paddingStyle">
+              <view class="font32 status-tip">您已提交报修申请，正在等待审核，请稍后</view>
+              <view class="flex-style card-content-list">
+                <view class="title">报修单号：</view>
+                <view class="font28 desc">6755112178273786718898</view>
+              </view>
+              <view class="flex-style card-content-list">
+                <view class="title">预约时间：</view>
+                <view class="font28 desc">2018-10-10</view>
+              </view>
+              <view class="flex-style card-content-list">
+                <view class="title">预约地址：</view>
+                <view class="font28 desc"> 浙江省杭州市滨江区江晖南路7号德施曼机电 (中国)3楼</view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+        <navigator url="/pages/pages/appointment/uploadList/uploadList" hover-class="navigator-hover" class="content card">
+          <view class="card-header flex-style">
+            <view class="card-header-left font32 flex-style">
+              <image class="img-icon" src="/pages/static/images/records.png"></image>
+              <text class="class-name">安装工单</text>
+            </view>
+            <view class="order-status-will font26">2018-08-09 12:24</view>
+            <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+          </view>
+          <view class="card-content">
+            <view class="paddingStyle">
+              <view class="font32 status-tip">您已提交报修申请，正在等待审核，请稍后</view>
+              <view class="flex-style card-content-list">
+                <view class="title">报修单号：</view>
+                <view class="font28 desc">6755112178273786718898</view>
+              </view>
+              <view class="flex-style card-content-list">
+                <view class="title">预约时间：</view>
+                <view class="font28 desc">2018-10-10</view>
+              </view>
+              <view class="flex-style card-content-list">
+                <view class="title">预约地址：</view>
+                <view class="font28 desc"> 浙江省杭州市滨江区江晖南路7号德施曼机电 (中国)3楼</view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="content-box">
+        <navigator url="/pages/pages/appointment/uploadList/uploadList" hover-class="navigator-hover" class="content card">
+          <view class="card-header flex-style">
+            <view class="card-header-left font32 flex-style">
+              <image class="img-icon" src="/pages/static/images/records.png"></image>
+              <text class="class-name">安装工单</text>
+            </view>
+            <view class="order-status-will font26">2018-08-09 12:24</view>
+            <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+          </view>
+          <view class="card-content">
+            <view class="paddingStyle">
+              <view class="font32 status-tip">您已提交报修申请，正在等待审核，请稍后</view>
+              <view class="flex-style card-content-list">
+                <view class="title">报修单号：</view>
+                <view class="font28 desc">6755112178273786718898</view>
+              </view>
+              <view class="flex-style card-content-list">
+                <view class="title">预约时间：</view>
+                <view class="font28 desc">2018-10-10</view>
+              </view>
+              <view class="flex-style card-content-list">
+                <view class="title">预约地址：</view>
+                <view class="font28 desc"> 浙江省杭州市滨江区江晖南路7号德施曼机电 (中国)3楼</view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="content-box">
+        <navigator url="/pages/pages/appointment/uploadList/uploadList" hover-class="navigator-hover" class="content card">
+          <view class="card-header flex-style">
+            <view class="card-header-left font32 flex-style">
+              <image class="img-icon" src="/pages/static/images/records.png"></image>
+              <text class="class-name">报修工单</text>
+            </view>
+            <view class="order-status-will font26">2018-08-09 12:24</view>
+            <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+          </view>
+          <view class="card-content">
+            <view class="paddingStyle">
+              <view class="font32 status-tip">您已提交报修申请，正在等待审核，请稍后</view>
+              <view class="flex-style card-content-list">
+                <view class="title">报修单号：</view>
+                <view class="font28 desc">6755112178273786718898</view>
+              </view>
+              <view class="flex-style card-content-list">
+                <view class="title">预约时间：</view>
+                <view class="font28 desc">2018-10-10</view>
+              </view>
+              <view class="flex-style card-content-list">
+                <view class="title">预约地址：</view>
+                <view class="font28 desc"> 浙江省杭州市滨江区江晖南路7号德施曼机电 (中国)3楼</view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

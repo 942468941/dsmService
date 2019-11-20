@@ -1,0 +1,15 @@
+<!--pages/pages/appointment/success/success.wxml-->
+<view class="marginTop32">
+  <view class="content">
+    <view class="success-box">
+      <image mode="aspectFill" class="img-size" src="/pages/static/images/success.png"></image>
+    </view>
+    <view class="textCenter success-tip">上传成功</view>
+    <view class="step-process">
+        <van-steps size="40rpx"  steps="{{ steps }}" active="{{ active }}" direction="vertical" active-color="#62D4B9" />
+    </view>
+  </view>
+  <view class="common-width marginTop64">
+    <button class="btn btn-info">确定</button>
+  </view>
+</view>

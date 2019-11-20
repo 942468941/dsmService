@@ -1,0 +1,37 @@
+<!--pages/index/index.wxml-->
+<view class="page-box">
+  <navigator class="content common-width nav" url="/pages/pages/appointment/index/index" hover-class="navigator-hover">
+    <view class="img-box">
+      <image class="img-size" src="/pages/static/images/install.png"></image>
+    </view>
+    <view class="flex1">
+      预约安装
+    </view>
+    <view class="status-box">
+      <van-icon name="arrow" color="#ccc" custom-class="icon" />
+    </view>
+  </navigator>
+  <navigator url="/pages/pages/logistics/index/index" hover-class="navigator-hover" class="content common-width nav">
+    <view class="img-box">
+      <image class="img-size" src="/pages/static/images/logistics.png"></image>
+    </view>
+    <view class="flex1">
+      物流查询
+    </view>
+    <view class="status-box">
+      <view class="status-active"></view>
+      <van-icon name="arrow" color="#ccc" custom-class="icon" />
+    </view>
+  </navigator>
+  <navigator url="/pages/pages/orderSearch/index/index" hover-class="navigator-hover" class="content common-width nav">
+    <view class="img-box">
+      <image class="img-size" src="/pages/static/images/search.png"></image>
+    </view>
+    <view class="flex1">
+      服务单查询
+    </view>
+    <view class="status-box">
+      <van-icon name="arrow" color="#ccc" custom-class="icon" />
+    </view>
+  </navigator>
+</view>

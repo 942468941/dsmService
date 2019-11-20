@@ -1,0 +1,36 @@
+/* pages/index/index.wxss */
+
+.page-box {
+  padding-top: 16rpx;
+  color: #4a4a4a;
+  font-size: 32rpx;
+}
+
+.nav {
+  height: 186rpx;
+  box-shadow: 0 10rpx 20rpx 0 rgba(187, 209, 241, 0.20);
+  border-radius: 24rpx;
+  margin-top: 48rpx;
+  display: flex;
+  align-items: center;
+}
+
+.img-box {
+  width: 62rpx;
+  height: 62rpx;
+  padding: 0 33rpx 0 54rpx;
+}
+
+.status-active {
+  width: 16rpx;
+  height: 16rpx;
+  background: #fc716d;
+  border-radius: 100%;
+  margin-right: 20rpx;
+}
+
+.status-box {
+  padding-right: 32rpx;
+  display: flex;
+  align-items: center;
+}

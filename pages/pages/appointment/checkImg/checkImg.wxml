@@ -1,0 +1,10 @@
+<!--pages/pages/appointment/checkImg/checkImg.wxml-->
+<view class="checkImg">
+  <view class="common-width content page-box">
+    <view class="view-img-box">
+      <image class="img-size" mode="aspectFit" src="/pages/static/images/lock.png"></image>
+    </view>
+    <view class="check-tip check-detail-width">图片上传有误-请重拍</view>
+    <view class="check-detail-width font28 error-reason">上传失败原因说明上传失败原因</view>
+  </view>
+</view>

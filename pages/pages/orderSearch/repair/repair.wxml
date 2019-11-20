@@ -1,0 +1,89 @@
+<!--pages/pages/orderSearch/repair/repair.wxml-->
+<view class="flex1 content-wrap">
+  <view class="content marginTop32">
+    <view class="flex-style input-h common-width">
+      <view class="input-name">联系人</view>
+      <input class="flex1 textRight normal-text" placeholder-class="normal-text" placeholder="请输入联系人名称" value=""></input>
+    </view>
+    <view class="flex-style input-h common-width">
+      <view class="input-name">联系方式</view>
+      <input class="flex1 textRight normal-text" placeholder-class="normal-text" placeholder="请输入联系方式" value="13088998899"></input>
+    </view>
+    <view class="flex-style input-h common-width">
+      <view class="input-name">选择地区</view>
+      <input class="flex1 textRight normal-text" placeholder-class="normal-text" placeholder="请输入联系人" value="浙江省杭州市"></input>
+      <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+    </view>
+    <view class="flex-style input-h common-width">
+      <view class="input-name">详细地址</view>
+      <textarea class="flex1 textRight normal-text" style="padding:0 24rpx;text-align:right;" class="flex1 normal-text" auto-height="true" placeholder-class="normal-text" placeholder="请输入详细地址"></textarea>
+    </view>
+  </view>
+  <view class="content marginTop32">
+    <view class="flex-style input-h common-width">
+      <view class="input-name">购买渠道</view>
+      <picker class="flex1 textRight normal-text" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          {{array[index]}}
+        </view>
+      </picker>
+      <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+    </view>
+  </view>
+  <view class="content marginTop32">
+    <view class="flex-style input-h common-width" style="align-items:flex-start;padding:10rpx 0;">
+      <view class="input-name">故障描述</view>
+      <textarea class="textareaSty" style="padding:0 24rpx;" cursor="30" class="flex1 normal-text" auto-height="true" placeholder-class="normal-text" placeholder="请输入详细故障情况"></textarea>
+    </view>
+  </view>
+  <view class="content marginTop32">
+    <view class="upload-content">
+      <view class="Tip-text">故障图片</view>
+      <view class="weui-uploader uploadImg-box marginTop32">
+        <view class="weui-uploader__bd">
+          <view class="weui-uploader__files">
+            <block wx:for="{{imageList}}" wx:for-item="image" wx:key="index">
+              <view class="weui-uploader__file">
+                <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+              </view>
+            </block>
+          </view>
+          <view class="weui-uploader__input-box flex-center" bindtap="chooseImage" wx-if="{{chooseImageShow}}">
+            <view class="chooseImage">
+              <image class="img-size" mode="aspectFit" src="/pages/static/images/upload.png"></image>
+            </view>
+          </view>
+        </view>
+        <van-icon wx:if="{{deleteImgStatus}}" bindtap="deleteImg" class="deleteIcon" name="clear" size="44rpx" color="rgba(0,0,0,0.5)" custom-class="icon" />
+      </view>
+    </view>
+  </view>
+  <view class="content marginTop32" style="margin-bottom:32rpx;">
+    <view class="upload-content">
+      <view class="Tip-text">购物凭证</view>
+      <view class="weui-uploader uploadImg-box marginTop32">
+        <view class="weui-uploader__bd">
+          <view class="weui-uploader__files">
+            <block wx:for="{{imageList}}" wx:for-item="image" wx:key="index">
+              <view class="weui-uploader__file">
+                <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+              </view>
+            </block>
+          </view>
+          <view class="weui-uploader__input-box flex-center" bindtap="chooseImage" wx-if="{{chooseImageShow}}">
+            <view class="chooseImage">
+              <image class="img-size" mode="aspectFit" src="/pages/static/images/upload.png"></image>
+            </view>
+          </view>
+        </view>
+        <van-icon wx:if="{{deleteImgStatus}}" bindtap="deleteImg" class="deleteIcon" name="clear" size="44rpx" color="rgba(0,0,0,0.5)" custom-class="icon" />
+      </view>
+    </view>
+  </view>
+</view>
+<view class=" content footerBtn">
+  <view class="common-width">
+    <view class="btn btn-info" bindtap="submitFun">提交</view>
+  </view>
+
+</view>

@@ -1,0 +1,47 @@
+<!--pages/pages/appointment/uploadList/uploadList.wxml-->
+<view class="page-box">
+  <navigator url="/pages/pages/appointment/checkImg/checkImg" hover-class="navigator-hover" class="content common-width nav">
+    <view class="img-box1">
+    </view>
+    <view class="flex1">
+      <view class="font32">锁舌弹出-正面视图</view>
+      <view class="order-status-warn font28 img-status">客服正在查看图片</view>
+    </view>
+    <view class="status-box">
+      <van-icon name="arrow" color="#ccc" custom-class="icon" />
+    </view>
+  </navigator>
+  <navigator url="/pages/pages/appointment/checkImg/checkImg" hover-class="navigator-hover" class="content common-width nav">
+    <view class="img-box1">
+    </view>
+    <view class="flex1">
+      <view class="font32">门框-正面视图</view>
+      <view class="order-status-willing font28 img-status">待安装</view>
+    </view>
+    <view class="status-box">
+      <van-icon name="arrow" color="#ccc" custom-class="icon" />
+    </view>
+  </navigator>
+  <navigator url="/pages/pages/appointment/checkImg/checkImg" hover-class="navigator-hover" class="content common-width nav">
+    <view class="img-box1">
+    </view>
+    <view class="flex1">
+      <view class="font32">屋外-打开门拍摄</view>
+      <view class="order-status-error font28 img-status">图片上传有误-请重拍</view>
+    </view>
+    <view class="status-box">
+      <van-icon name="arrow" color="#ccc" custom-class="icon" />
+    </view>
+  </navigator>
+  <navigator url="/pages/pages/appointment/checkImg/checkImg" hover-class="navigator-hover" class="content common-width nav">
+    <view class="img-box1">
+    </view>
+    <view class="flex1">
+      <view class="font32">拍摄门框-上下是否有洞</view>
+      <view class="order-status-willing font28 img-status">待安装</view>
+    </view>
+    <view class="status-box">
+      <van-icon name="arrow" color="#ccc" custom-class="icon" />
+    </view>
+  </navigator>
+</view>

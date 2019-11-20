@@ -1,0 +1,24 @@
+<!--pages/pages/logistics/detail/detail.wxml-->
+<view class="card-box">
+  <view class="card-content">
+    <view class="flex-style card-content-list">
+      <view class="title font28">运单单号：</view>
+      <view class="font28 detail">6755112178273786718898</view>
+    </view>
+    <view class="flex-style card-content-list">
+      <view class="title font28">承运公司：</view>
+      <view class="font28 detail">京东</view>
+    </view>
+    <view class="flex-style card-content-list">
+      <view class="title font28">运单单号：</view>
+      <view class="font28 detail">6755112178273786718898</view>
+    </view>
+  </view>
+</view>
+<view class="searchAddress" style="background:#fff">
+  去官网查询
+  <van-icon name="arrow" custom-class="icon"/>
+</view>
+<demo-block title="竖向步骤条">
+  <van-steps steps="{{ steps }}" active="{{ active }}" direction="vertical" active-color="#333" />
+</demo-block>

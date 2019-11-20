@@ -1,0 +1,2 @@
+/* pages/pages/appointment/uploadImg2/uploadImg2.wxss */
+@import "../uploadImg/uploadImg.wxss";

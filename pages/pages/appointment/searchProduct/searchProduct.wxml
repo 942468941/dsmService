@@ -1,0 +1,14 @@
+<!--pages/pages/appointment/searchProduct/searchProduct.wxml-->
+<view class="flex1 content-box">
+  <view class="common-width marginTop48">
+    <view class="tip-title">找不到产品？</view>
+    <view class="font26 order-status-will tip-desc">请在下方输入信息，进行查找。</view>
+    <view>
+      <input class="search-input" placeholder-class="placeholderStyle" placeholder="请输入手机号"></input>
+    </view>
+    <view>
+      <input class="search-input" placeholder-class="placeholderStyle" placeholder="请输入订单编号"></input>
+    </view>
+    <view class="btn search-btn btn-info" bindtap="searchFun">查询</view>
+  </view>
+</view>

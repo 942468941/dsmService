@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/pages/appointment/appointmentFail/appointmentFail",
+    "pages/pages/appointment/changeInstall/changeInstall",
+    "pages/pages/appointment/scanCode/scanCode",
+    "pages/pages/appointment/notice/notice",   
+    "pages/pages/appointment/uploadImg/uploadImg",
+    "pages/pages/appointment/uploadImg1/uploadImg1",
+    "pages/pages/appointment/uploadImg2/uploadImg2",
+    "pages/pages/appointment/uploadImg3/uploadImg3",
+    "pages/pages/appointment/fail/fail",
+    "pages/pages/appointment/success/success",
+    "pages/pages/appointment/installForm/installForm",
+    "pages/pages/appointment/searchList/searchList",
+    "pages/pages/appointment/searchProduct/searchProduct",
+    "pages/pages/appointment/index/index",
+    "pages/pages/appointment/checkImg/checkImg",
+    "pages/pages/appointment/uploadList/uploadList",  
+    "pages/pages/logistics/index/index",   
+    "pages/pages/logistics/detail/detail",
+    "pages/pages/orderSearch/index/index",
+    "pages/pages/orderSearch/detail/detail",
+    "pages/pages/orderSearch/repair/repair"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "德施曼服务号",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

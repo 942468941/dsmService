@@ -1,0 +1,16 @@
+/* pages/pages/appointment/uploadList/uploadList.wxss */
+@import '/pages/index/index.wxss';
+.img-box1{
+  width:180rpx;
+  height:126rpx;
+  border: 2rpx solid #F2F4F7;
+  border-radius: 4rpx;
+  margin:0 36rpx;
+}
+.nav{
+  min-height:214rpx;
+  border-radius: 8rpx;
+}
+.img-status{
+  margin-top:16rpx;
+}

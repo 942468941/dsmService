@@ -1,0 +1,33 @@
+<!--pages/pages/appointment/changeInstall/changeInstall.wxml-->
+  <view  hover-class="navigator-hover" class="content common-width card">
+    <view class="card-header flex-style">
+      <view class="card-header-left font28">平台编号：6755112178273786718898</view>
+      <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+    </view>
+    <view class="order-box">
+      <view class="order-img-box flex-center">
+        <image class="img-size" mode="aspectFit" src="/pages/static/images/order-lock.png"></image>
+      </view>
+      <view class="textCenter lock-name">T86</view>
+      <view class="textCenter lock-tip">*图片锁具仅供参考，请以实物为准</view>
+    </view>
+    <view class="card-content">
+      <view class="flex1 paddingStyle">
+        <view class="flex-style card-content-list">
+          <view class="title">联系人：</view>
+          <view class="font28">张三</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">购买店铺/渠道：</view>
+          <view class="font28">京东</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">购买时间：</view>
+          <view class="font28">2019-11-13</view>
+        </view>
+      </view>
+    </view>
+  </view>
+<view class="common-width marginTop54">
+  <button class="btn btn-info">预约安装</button>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-icon": "/pages/dist/icon/index",
+    "van-steps": "/pages/dist/steps/index"
+  }
+}

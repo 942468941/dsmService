@@ -1,0 +1,35 @@
+<!--pages/pages/appointment/installForm/installForm.wxml-->
+<view>
+  <view class="content marginTop32">
+    <view class="flex-style input-h common-width">
+      <view class="input-name">联系人</view>
+      <input class="flex1 textRight normal-text" placeholder-class="normal-text" placeholder="请输入联系人" value="张三"></input>
+    </view>
+    <view class="flex-style input-h common-width">
+      <view class="input-name">手机</view>
+      <input class="flex1 textRight normal-text" placeholder-class="normal-text" placeholder="请输入联系人" value="13088998899"></input>
+    </view>
+    <view class="flex-style input-h common-width">
+      <view class="input-name">地区</view>
+      <input class="flex1 textRight normal-text" placeholder-class="normal-text" placeholder="请输入联系人" value="浙江省杭州市"></input>
+      <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+    </view>
+    <view class="flex-style input-h common-width">
+      <view class="input-name">详细地址</view>
+      <input class="flex1 textRight normal-text" placeholder-class="normal-text" placeholder="江虹南路8号德施曼2楼IT信息中心"></input>
+    </view>
+    <view class="flex-style input-h common-width">
+      <view class="input-name">期望服务时间</view>
+      <picker class="flex1 textRight normal-text" mode="date" value="{{date}}" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+      <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+    </view>
+  </view>
+  <view class="common-width marginTop64">
+    <view class="btn btn-info" bindtap="submitFun">提交</view>
+  </view>
+  <view class="order-status-will tip font28 textCenter">具体服务时间以服务商与您沟通约定为准</view>
+</view>

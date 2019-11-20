@@ -1,0 +1,19 @@
+<!--pages/pages/appointment/scanCode/scanCode.wxml-->
+<view class="common-width content marginTop32">
+  <view class="title">请扫描二维码进行预约</view>
+  <view class="box">
+    <view class="img-box">
+      <image class="img-size" src="/pages/static/images/01.png"></image>
+    </view> 
+    <view class="desc">01.外包装侧边二维码</view>
+  </view>
+  <view class="box">
+    <view class="img-box">
+      <image class="img-size" src="/pages/static/images/02.png"></image>
+    </view> 
+    <view class="desc">02.后面板 电池后盖二维码</view>
+  </view>
+</view>
+<view class="common-width marginTop54">
+  <button class="btn btn-info" bindtap="scanCode">扫描二维码</button>
+</view>

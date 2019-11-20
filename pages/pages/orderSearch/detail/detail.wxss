@@ -1,0 +1,75 @@
+/* pages/pages/orderSearch/detail/detail.wxss */
+@import '/pages/pages/logistics/index/index.wxss';
+
+.desc {
+  color: #aab2b7;
+  overflow-wrap: break-word;
+  flex: 1;
+}
+
+.title {
+  color: #6e7b8c;
+}
+
+.card-content {
+  padding: 20rpx 0;
+}
+
+.img-icon {
+  width: 24rpx;
+  height: 28rpx;
+  margin-right: 12rpx;
+  color: #b8c7ce;
+}
+
+.record-box {
+  padding: 20rpx 0;
+  display: flex;
+  align-items: center;
+}
+
+.record-title {
+  font-size: 24rpx;
+  color: #b8c7ce;
+}
+
+.van-steps--vertical {
+  padding-left: 0 !important;
+}
+
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content-box {
+  overflow: auto;
+}
+
+.evaluate-header {
+  height: 80rpx;
+  align-items: center;
+  font-size: 34rpx;
+  color: #333;
+  border: 1rpx solid #e7e7e7;
+}
+.evaluate-header-name{
+  flex:1;
+  text-align: center;
+}
+.deleteIcon-box{
+  padding-left:24rpx;
+}
+.van-icon-star{
+  font-size: 64rpx !important;
+}
+.van-rate__item{
+  padding:0 20rpx !important;
+}
+.star-box{
+  min-height:170rpx;
+}
+.starTip{
+  margin-bottom: 56rpx;
+}

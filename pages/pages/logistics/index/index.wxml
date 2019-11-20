@@ -1,0 +1,49 @@
+<!--pages/pages/logistics/index/index.wxml-->
+<view class="page-box">
+  <navigator url="../detail/detail" hover-class="navigator-hover" class="content common-width card">
+    <view class="card-header flex-style">
+      <view class="card-header-left font32">订单：1234567890098764</view>
+      <view class="order-status-warn font26">订单处理中</view>
+    </view>
+    <view class="card-content">
+      <view class="flex1">
+        <view class="flex-style card-content-list">
+          <view class="title">平台单号：</view>
+          <view class="font28">6755112178273786718898</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">平台名称：</view>
+          <view class="font28">京东</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">运单号：</view>
+          <view class="font28">6755112178273786718898</view>
+        </view>
+      </view>
+      <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+    </view>
+  </navigator>
+  <navigator url="../detail/detail" hover-class="navigator-hover" class="content common-width card">
+    <view class="card-header flex-style">
+      <view class="card-header-left font32">订单：1234567890098764</view>
+      <view class="order-status font26">已交付物流</view>
+    </view>
+    <view class="card-content">
+      <view class="flex1">
+        <view class="flex-style card-content-list">
+          <view class="title">平台单号：</view>
+          <view class="font28">6755112178273786718898</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">平台名称：</view>
+          <view class="font28">京东</view>
+        </view>
+        <view class="flex-style card-content-list">
+          <view class="title">运单号：</view>
+          <view class="font28">6755112178273786718898</view>
+        </view>
+      </view>
+      <van-icon name="arrow" color="#AAB2B7" custom-class="icon" />
+    </view>
+  </navigator>
+</view>

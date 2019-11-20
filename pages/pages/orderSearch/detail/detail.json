@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-icon": "/pages/dist/icon/index",
+    "van-steps": "/pages/dist/steps/index",
+    "van-popup":"/pages/dist/popup/index",
+    "van-rate": "/pages/dist/rate/index"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

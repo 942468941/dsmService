@@ -1,0 +1,13 @@
+<!--pages/pages/appointment/appointmentFail/appointmentFail.wxml-->
+<view class="marginTop32">
+  <view class="content">
+    <view class="success-box">
+      <image mode="aspectFill" class="img-size" src="/pages/static/images/fail.png"></image>
+    </view>
+    <view class="textCenter success-tip">预约失败</view>
+    <view class="textCenter font28 fail-desc">您的二维码信息有误，请联系客服帮您预约</view>
+  </view>
+  <view class="common-width marginTop64">
+    <button class="btn btn-info">联系客服</button>
+  </view>
+</view>
